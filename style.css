@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital@0;1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+    background:linear-gradient(rgba(0, 0, 0, 0.342),black),url(https://static.wixstatic.com/media/84770f_7211b06078ec46779c57dfc5600a70dc~mv2.jpg/v1/fill/w_1086,h_916,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_7211b06078ec46779c57dfc5600a70dc~mv2.jpg);
+    background-position:top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity:1;
+    /* z-index:2; */
+    background-attachment: fixed;
+}
+.nav{
+    height: 6em;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.726);
+    display: flex;
+    position: fixed;
+    z-index: 1; 
+}
+.nav>h1{
+    font-size: 1.2em;
+    color: white;
+    padding-left: 1em;
+    font-family: sans-serif;
+    font-weight: 900;
+    padding-top: 0.5em;
+}
+
+h1>i{
+    color:orangered;
+    font-size: 0.8em;
+}
+.na{
+    width: 58em;
+    /* background-color: red; */
+    display:flex;
+    /* position: relative; */
+    justify-content:end;
+    align-items: center;
+    gap: 2em;
+    margin-left: 20em;
+}
+.na>a{
+    font-size: 0.8em;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+}
+.na>a::before{
+    content: "";
+    position: absolute;
+    bottom: -40%;
+    width: 0;
+    height: 25%;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.na>a:hover::before{
+    width: 100%;
+}
+.na>i{
+    font-size: 2em;
+    color:orangered;
+}
+a:nth-child(7){
+    color:orangered;
+    font-weight: 600;
+    font-size: 1em;
+}
+.container>h1{
+    font-size: 5em;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: white;
+    margin:  0 0 0 1.3em;
+    padding-top: 1.5em;
+    /* opacity: 0; */
+    /* animation: step 1s linear 1 both; */
+}
+/* @keyframes step {
+    from{
+
+    }
+    to{
+        margin-left: 8%;
+        opacity: 1;
+    }
+} */
+.container>h2{
+    font-size: 2em;
+    font-family: 'Sriracha', cursive;
+    color: rgb(233, 106, 59);
+    font-weight: 100;
+    margin-top: -0.5em;
+    margin-left: 3.2em;
+    /* animation:stop 3s linear 1 both; */
+    /* opacity: 0; */
+}
+/* @keyframes stop {
+    from{
+    margin-top: 8%;
+    }
+    to{
+    opacity: 1;
+    }
+} */
+.but{
+    /* background-color: red; */
+    display: flex;
+}
+.but>button{
+    padding: 1.5em 4.5em;
+    margin-left: 8em;
+    margin-top: 1em;
+    border: none;
+    letter-spacing: 0.5em;
+    color: rgba(0, 0, 0, 0.884);
+    /* font-size: 1em; */
+    font-weight: 900;
+    transition: all 1s;
+}
+.but>button:hover{
+    background-color: rgba(0, 0, 0, 0.151);
+    color: white;
+    cursor: pointer;
+}
+.icon{
+    background-color: rgb(238, 181, 74);
+    height: 4em;
+    width: 5em;
+    margin-top: 0.85em;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+/* page1 responsive */
+/* @media only screen and (max-width:600px) {
+    .container{
+        /* width: 130%; */
+        /* background-color: red;
+    }
+    .container>img{
+        opacity: 0;
+        background-color: blue;
+    }
+} */ 
+
+/* page2 css */
+.second{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(33, 87, 87);
+    display: flex;
+    background-position:center;
+    background:linear-gradient(rgba(0, 0, 0, 0.11),black), url(https://media.istockphoto.com/id/1441759606/photo/happy-sportswoman-with-earbuds-running-in-the-park.webp?b=1&s=170667a&w=0&k=20&c=qpsfZbBWh8eKpxMgIcGRy-BiNPMFrUGJqWgUx0uE5lY=);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.second1{
+    background-color:rgb(63, 13, 13);
+    height: 100%;
+    width: 45%;
+}
+.line{
+    width: 2em;
+    background-color:pink;
+    height: 0.5em;
+    width: 17em;
+    margin-left: 5.3em;
+}
+.second1>h1{
+    color: white;
+    font-size: 2em;
+    font-family: sans-serif;
+    font-weight: 800;
+    padding: 1em 0 0 2.7em;
+}
+.second1>p{
+    color: rgba(236, 231, 231, 0.685);
+    font-size: 1.5em;
+    font-family: sans-serif;
+    /* font-weight: 800; */
+    padding: 1em 0 0 3.5em;
+    /* font-family: 'Jost', sans-serif; */
+    font-family: 'Jost', sans-serif;
+}
+.second1>button{
+    padding: 1em 3em;
+    margin: 2em 0 0 5.1em;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 1em;
+}
+.second1>button:hover{
+    background-color: white;
+    color: black;
+    transition:  ease 3s;
+    font-weight: 800;
+}
+.second2{
+    /* background-color: rgb(214, 175, 175); */
+    height: 100%;
+    width: 55%;
+}
+/* page3 css */
+.third{
+    background-color:black;
+    height: 170%;
+    width: 100%;
+}
+.third>h1{
+    color: white;
+    font-size: 2em;
+    margin-left: 15em;
+    padding-top: 2.5em;
+}
+.line1{
+    height: 0.2em;
+    width: 17em;
+    background-color:pink;
+    margin-left: 30em;
+    /* margin-top: -1.7em; */
+}
+.img{
+    /* background-color: red; */
+    width: 100%;
+    height: 50%;
+    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+.img1{
+    background-color: green;
+    height:100%;
+    width: 40%;
+    background-image: url(https://static.wixstatic.com/media/b596b0_a3f88ea4f8d44a8baeadc1edce6088f7~mv2.jpg/v1/fill/w_450,h_553,al_c,q_80,enc_auto/b596b0_a3f88ea4f8d44a8baeadc1edce6088f7~mv2.jpg);
+    /* background-image: url(https://media.istockphoto.com/id/656673020/photo/handsome-in-spectacles.webp?b=1&s=170667a&w=0&k=20&c=5vM12a1G-cIr0RpSUIUPC_lTmJYiewMmGJz6O0wnLCY=); */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:0.5;
+    transition :all 1s linear; 
+}
+.img1:hover{
+    opacity:1;
+}
+.img2{
+    background-color: yellow;
+    height:100%;
+    width: 40%;
+    background-image: url(https://static.wixstatic.com/media/b596b0_1a57b6716f234aba8dcc70be80754448~mv2.jpg/v1/fill/w_437,h_553,al_c,q_80,enc_auto/b596b0_1a57b6716f234aba8dcc70be80754448~mv2.jpg);
+    /* background-image: url(https://media.istockphoto.com/id/1185414460/photo/young-woman.webp?b=1&s=170667a&w=0&k=20&c=2YY-K9B-7coExgQcgr2Nwl3xydfVOwTQN5FpBD451G0=); */
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:0.5;
+    transition :all 1s linear; 
+}
+.img2:hover{
+    opacity:1;
+}
+.name{
+    /* background-color: aqua; */
+    height: 30%;
+    width: 100%;
+    display: flex;
+    color: white;
+}
+.name1{
+    /* background-color: red; */
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    padding: 3em;
+}
+.name2{
+    /* background-color: rgb(179, 255, 0); */
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    padding: 3em;
+    font-family: sans-serif;
+}
+.name1>button{
+    padding: 1em 2em;
+    background-color:orangered;
+    border: none;
+    margin-top: 2em;
+    font-weight: 900;
+    font-family: sans-serif;
+
+}
+.name1>button:hover{
+    background-color:white;
+    transition :all 0.5s linear; 
+
+}
+.name2>button{
+    padding: 1em 2em;
+    background-color:orangered;
+    border: none;
+    margin-top: 2em;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+.name2>button:hover{
+    background-color:white;
+    transition :all 0.5s linear; 
+
+}
+/* 4th page css */
+.forth{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: yellowgreen;
+    overflow-x: hidden;
+}
+.divimg{ 
+    /* background-color: gold; */
+    height: 100%;
+    width: 60%;
+    background:linear-gradient(rgba(0, 0, 0, 0.473),black),url(https://static.wixstatic.com/media/fc51b9e6deef4ddba842a443325c49b0.jpg/v1/fill/w_588,h_827,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fc51b9e6deef4ddba842a443325c49b0.jpg);
+    background-position:right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.divtext{
+    background-color:rgb(77, 18, 18);
+    height: 100%;
+    width: 40%;
+    color: white;
+    text-align: center;
+    padding-top: 7em;
+    font-family: sans-serif;
+    font-size: 0.9em;
+}
+.divtext>button{
+    padding: 0.6em 4.5em;
+    background-color: rgb(216, 161, 12);
+    border: none;
+    font-weight: 900;
+}
+/* 5th page css */
+.fifth{
+    background-color: black;
+    height: 75%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 3em;
+}
+.fifth>h1{
+    color: white;
+    font-size: 2em;
+    /* margin-left: 10em; */
+    padding-top: 2.5em;
+    /* font-family: sans-serif; */
+    font-weight: 800;
+}
+.teamline{
+    height: 0.2em;
+    width: 14em;
+    background-color:pink;
+    margin-left: 40em;
+}
+.client{
+    /* background-color: red; */
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1em;
+}
+.client1{
+    height: 2em;
+    width: 20em;
+    /* background-color: green; */
+    font-size: 2em;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+/* 6th page css */
+.six{
+    height: 140%;
+    width: 100%;
+    background-color:rgba(36, 1, 13, 0.904);
+}
+.divh1{
+    height: 10em;
+    /* background-color: green; */
+    display: flex;
+    justify-content:center;
+    gap: 20em;
+    align-items: center;
+}
+.divh1>h1{
+    color: white;
+    font-size: 2em;
+    padding-top: 2.5em;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+.divh1>button{
+    height: 3em;
+    width: 10em;
+    margin-top: 4.5em;
+    border: none;
+    font-weight: 900;
+    background-color: rgb(214, 166, 32);
+    font-family: sans-serif;
+    letter-spacing: 0.2em;
+    transition :all 0.5s linear; 
+
+}
+.divh1>button:hover{
+    background-color:rgba(36, 3, 15, 0.171);
+    color: white;
+}
+.sixline{
+    height: 0.2em;
+    width: 17em;
+    background-color:pink;
+    margin-left: 24em;
+}
+.servimg{
+    /* background-color: greenyellow; */
+    height: 45%;
+    width: 100%;
+    display: flex;
+    margin-top: 3em;
+    gap: 1.8em;
+    justify-content: center;
+}
+.servimg1{
+    background-color: green;
+    height: 100%;
+    width: 27%;
+}
+.servimg1>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.8;
+}
+.servimg1>img:hover{
+    cursor: pointer;
+    background-color: black;
+    opacity: 1;
+    transition: all 1s linear;
+
+    /* background: linear-gradient(rgba(0, 0, 0, 0.288),black); */
+}
+.servtext{
+    /* background-color:yellow; */
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+.servtext1{
+    /* background-color: aqua; */
+    height: 100%;
+    width: 25%;
+    text-align: center;
+}
+.servtext1>h1{
+    font-size: 0.8em;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 900;
+    padding-top: 3em;
+    letter-spacing: 0.2em;
+}
+.sessionline{
+    height: 0.1em;
+    width: 21em;
+    text-align: center;
+    margin-left: 1em;
+    background-color: pink;
+}
+.servtext1>button{
+    margin-top: 3em;
+    padding: 1em 2em;
+    background-color: rgb(194, 146, 13);
+    border: none;
+    letter-spacing: 0.3em;
+    font-weight: 900;
+    transition: all 0.5s linear; 
+}
+.servtext1>button:hover{
+    background-color: white;
+
+}
+/* 7th page  css */
+.seven{
+    height: 80%;
+    width: 100%;
+    /* background:linear-gradient(rgba(0, 0, 0, 0.712),rgba(0, 0, 0, 0.568)), url(https://static.wixstatic.com/media/b596b0_51e78f0d63004bc2a90e0a57126d6a84~mv2.png/v1/fill/w_980,h_686,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/b596b0_51e78f0d63004bc2a90e0a57126d6a84~mv2.png); */
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.seven>video{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+/* 10th page css */
+
+.ten{
+    background-color: black;
+    height: 65%;
+    width:100%;
+    display:flex;
+    gap: 3em;
+}
+.ten1{
+    height:100%;
+    width:30%;
+    /* background-color: aqua; */
+}
+.ten1>h1{
+    font-size: 1.2em;
+    color: white;
+    padding-left: 2.6em;
+    font-family: sans-serif;
+    font-weight: 900;
+    padding-top: 2em;  
+    color: white;  
+    letter-spacing: 0.1em; 
+}
+.tenicon>i{
+    /* background-color: red; */
+    /* height: 2em; */
+    /* width: 10em; */
+    padding-top: 3em;
+    font-size: 1.4em;
+    margin-left: 2em;
+    color: white;
+}
+.ten1>h2{
+    color: white;
+    font-size: 1em;
+    font-family: sans-serif;
+    font-weight: 200;
+    padding: 3em 0 0 2.5em;
+    line-height: 1.8em;
+    margin-left: 1em;
+}
+.ten1>button{
+    padding: 0.6em 1em;
+    background-color:transparent;
+    font-family: sans-serif;
+    font-weight:900;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+    margin-left: 2.6em;
+    margin-top: 2em;
+    border: 0.1em solid rgb(194, 146, 13);
+    color: rgb(194, 146, 13);
+    transition: all 1s linear;
+}
+.ten1>button:hover{
+    background-color: rgb(194, 146, 13);
+    color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
